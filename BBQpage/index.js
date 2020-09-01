@@ -17,4 +17,4 @@ function getsubmit(event){
 
     let content = document.getElementById("MAIN");
         content.innerHTML = update_content;
-}\
+}

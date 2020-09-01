@@ -1,0 +1,233 @@
+/* Typography */
+
+body{
+    margin: 0;
+    font-size: 1rem;
+    color: #404040;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif; 
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1{
+    font-size: 2.25rem;
+    margin: 0;
+}
+h1+p{
+    margin: 0;
+}
+
+h2 + p {
+    font-weight: 900;
+    color: #F18119;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 1.13125rem;
+    margin: 0;
+}
+
+.intro > *,
+.main-content > * {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.picture-subtitle{
+    font-size: 1.75rem;
+    margin-bottom: 2em;
+}
+
+span{
+    font-weight: 900;
+}
+.small-text{
+    font-size: 0.625rem;
+    letter-spacing: 2px;
+}
+.top-text,.picture-subtitle,.register-subtitle{
+    color: #f18119;
+}
+.picture-title{
+    text-align: center;
+    font-weight: 500;
+    color: #FFF;
+}
+.picture-subtitle, .register-subtitle, .top-text{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.register-content{
+    text-align: center;
+}
+
+.picture-subtitle.register-title{
+    margin: 0;
+}
+
+.fine-print{
+    text-align: center;
+}
+/* backgroun-image */
+
+*{
+    box-sizing: border-box;
+}
+
+.intro{
+    background-color: #404040;
+    /* background-image: url(../image/BBQ.jpg),linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation:slidebg 20s linear infinite; */
+    background-image: url(../image/BBQ.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-blend-mode: overlay;
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50vh;
+}
+
+/* order */
+
+.main-content{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+.register-content{
+    width: 80%;
+    margin: 1.5em auto;
+}
+.top-text{
+    margin: 0;
+    order: -1;
+    padding-top: 2px;
+    border-top: 5px solid #F18119;
+    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;  
+    animation:test 5s linear infinite;
+}
+
+/* @keyframes test{
+    to{
+        border-: 20;
+    }
+} */
+/* 
+button{
+    background-color: #f18119;
+    margin: 2em;
+} */
+
+/* =================
+   main-content section 
+   ================= */
+   
+.main-content {
+    padding: 2em 1em;
+}
+/* =================
+   form
+   ================= */
+
+   .email-collector {
+
+    width: 80%;
+    max-width: 300px;
+    
+    
+}
+
+input,.btn{
+    width: 100%;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+input{
+    text-align: center;
+    
+    border: 1px solid #404044;
+    padding: 0.5em 1.5em;
+    margin-bottom: 0.75em;
+    transition: 0.25s;
+}
+input:focus{
+    transform: scale(1.1);
+}
+.btn{
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation:slidebg 20s linear infinite;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 0.625em;
+    padding: 1em 2.5em;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.btn:hover,.btn:focus{
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation:slidebg 5s linear infinite;
+    opacity: 0.75;
+    color: black;
+    transform: scale(1.1);
+}
+
+.btn:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  
+}
+
+@keyframes slidebg {
+  to {
+    background-position:100vw;
+  }
+}
+
+/* =================
+   media queries 
+   ================= */
+   
+
+   @media (min-width:600px){
+       body{
+           flex-direction: row ;
+           font-size: 1.125rem;
+       }
+       h1{
+           font-size: 3.5rem;
+       }
+       h2{
+           font-size: 1.75rem;
+       }
+       .picture-title{
+           margin-bottom: 2em;
+       }
+       .picture-subtitle{
+           margin-bottom: 2em;
+       }
+        .intro,
+    .main-content {
+        width: 50%;
+        min-height: 100vh;
+    }
+    .register-title{
+        margin-bottom: 1em;
+    }
+   }
+
+   
