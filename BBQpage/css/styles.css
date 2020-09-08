@@ -151,6 +151,7 @@ input,.btn{
     width: 100%;
     border-radius: 6px;
     font-size: 1rem;
+    outline: 0;
 }
 input{
     text-align: center;
